@@ -9,5 +9,14 @@ and open the template in the editor.
 */
 
 header{
-    background-color: $gray + 120;
+    background-color: $gray ;
+    padding-top: 10px;
+
+    a{
+        color:$black;
+    }
+    .google-search{
+        margin-top: 30px;
+        margin-left: 15px;
+    }
 } 

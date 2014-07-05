@@ -8,9 +8,13 @@ and open the template in the editor.
     Author     : rtcamp
 */
 
+// Comment out this import if you don't want to use normalize
+@import "rtp-normalize";
 
 @import "rtp-foundation";
+@import "rtp-normalize";
 
 @import "variables";
 @import "rtp-header";
 @import "rtp-menu";
+@import "rtp-contents";

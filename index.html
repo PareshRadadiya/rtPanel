@@ -4,50 +4,37 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html>
+<html class="no-js" lang="en">
     <head>
-        <title>TODO supply a title</title>
+        <title>rtPanel Practice</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css" />
-        <script src="jquery-2.1.1.min.js" ></script>
+        <script src="assets/foundation/bower_components/modernizr/modernizr.js" ></script>
+        <script src="assets/foundation/bower_components/jquery/dist/jquery.min.js" ></script>
+        <script src="assets/foundation/bower_components/foundation/js/foundation.min.js" ></script>
+        <script>
+            $(function() {
+                $(document).foundation();
+            });
+        </script>
     </head>
     <body>
-        <header> 
+        <div class="off-canvas-wrap" data-offcanvas>
+            <div class="inner-wrap">
+                <div class="hide-for-large-only">
+                    <nav class="tab-bar">
+                        <section class="left-small">
+                            <a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+                        </section>
 
-            <div class="row">
-                <div class="right">
-                    <a>HOME</a>
-                    <a>CONTACT US</a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="large-8 medium-8 columns">
-                    <img  src="assets/images/sitelogo.png"/>
-                </div>
-                <div class="large-4 medium-4 columns hide-for-small">
-                    <input type="text" placeholder="Google serach" />
-                </div>
-            </div>
-        </header>
-
-        <div class="rtp-header-wrapper">
-        <nav class="top-bar row  text-center" data-topbar>
-
-
-<!--            <ul class="title-area">
-                <li class="name">
-                    <h1><a href="#">My Site</a></h1>
-                </li>
-                 Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone 
-                <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-            </ul>-->
-           
-                    <section class="top-bar-section">
-
-
-                        <!-- Left Nav Section -->
-                        <ul class="left">
+                        <section class="middle tab-bar-section">
+                            <h1 class="title">rtPanel</h1>
+                        </section>
+                    </nav>
+                    <aside class="left-off-canvas-menu">
+                        <ul class="off-canvas-list">
+                            <li><label>rtPanel</label></li>
                             <li><a href="#">HOME</a></li>
                             <li><a href="#">ABOUT</a></li>
                             <li><a href="#">EXHIBITION PROGRAM</a></li>
@@ -57,31 +44,90 @@ and open the template in the editor.
                             <li><a href="#">GUIDELINE</a></li>
                             <li><a href="#">VISITOR CORNER</a></li>
                         </ul>
-                    </section>
-                
+                    </aside>
+                </div>
+                <section class="main-section">
+                    <div class="show-for-large-only">
+                        <header> 
 
-        </nav>
+                            <div class="row">
+                                <div class="right">
+                                    <a>HOME</a>
+                                    <a>CONTACT US</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="large-8 medium-8 columns">
+                                    <img  src="assets/images/sitelogo.png"/>
+                                </div>
+                                <div class="large-4 medium-4 columns hide-for-small">
+                                    <input type="text" class="google-search" placeholder="Google serach" />
+                                </div>
+                            </div>
+                        </header>
+
+
+                        <div class="rtp-menu-wrapper">
+
+                            <nav class="top-bar row" data-topbar>
+                                <section class="top-bar-section">
+
+
+                                    <!-- Left Nav Section -->
+                                    <ul class="left">
+                                        <li><a href="#">HOME</a></li>
+                                        <li><a href="#">ABOUT</a></li>
+                                        <li><a href="#">EXHIBITION PROGRAM</a></li>
+                                        <li><a href="#">MEDIA</a></li>
+                                        <li><a href="#">TRAVEL GUIDE</a></li>
+                                        <li><a href="#">SPONSORSHIP</a></li>
+                                        <li><a href="#">GUIDELINE</a></li>
+                                        <li><a href="#">VISITOR CORNER</a></li>
+                                    </ul>
+                                </section>
+
+
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="row welcome-note">
+                        <div class="large-8 columns slider">
+                            <ul class="orbit-slider" data-orbit  data-options="animation:slide;pause_on_hover:false; animation_speed:500;navigation_arrows:true;bullets:false;">
+                                <li>
+                                    <img src="assets/images/slider-img1.jpg" alt="slide 1" />
+                                    <div class="orbit-caption">
+                                        Caption One.
+                                    </div>
+                                </li>
+                                <li class="active">
+                                    <img src="assets/images/slider-img2.jpg" alt="slide 2" />
+                                    <div class="orbit-caption">
+                                        Caption Two.
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="large-4 columns welcome-note-context">
+                            <h4>Welcomt to rtPanel</h4>
+                            <a class="th left custom-thumbnail"  href="assets/images/welcomenote-default-user-img.jpg">
+                                <img src="assets/images/welcomenote-default-user-img.jpg">
+                            </a>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                            </p>
+                            <h6>Read more...</h6>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <hr/>
+                    </div>
+                    <div class="row">
+                        <hr/>
+                    </div>
+
+                </section>
+            </div>
         </div>
-        
-        <ul class="example-orbit" data-orbit>
-  <li>
-    <img src="../assets/img/examples/satelite-orbit.jpg" alt="slide 1" />
-    <div class="orbit-caption">
-      Caption One.
-    </div>
-  </li>
-  <li class="active">
-    <img src="../assets/img/examples/andromeda-orbit.jpg" alt="slide 2" />
-    <div class="orbit-caption">
-      Caption Two.
-    </div>
-  </li>
-  <li>
-    <img src="../assets/img/examples/launch-orbit.jpg" alt="slide 3" />
-    <div class="orbit-caption">
-      Caption Three.
-    </div>
-  </li>
-</ul>
+
     </body>
 </html>

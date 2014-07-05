@@ -8,13 +8,18 @@ and open the template in the editor.
     Author     : paresh
 */
 
-.rtp-header-wrapper{
-    background-color: $yellow-cream - 5;
-    
-        a{
-            background-color: $yellow-cream - 5 !important;
-        }
-        
-    
+.rtp-menu-wrapper{
+    background-color: $yellow-cream ;
+
+    a{
+        background-color: $yellow-cream !important;
+        color:$black !important;
+    }
+
+    .row{
+        background-color: $yellow-cream ;
+    }
+
+
 }
 
