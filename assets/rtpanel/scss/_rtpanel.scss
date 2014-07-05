@@ -9,12 +9,19 @@ and open the template in the editor.
 */
 
 // Comment out this import if you don't want to use normalize
-@import "rtp-normalize";
-
-@import "rtp-foundation";
-@import "rtp-normalize";
+// Import Compass
+@import "compass";
 
 @import "variables";
+
+@import "settings";
+@import "rtp-normalize";
+@import "rtp-foundation";
+
+
+@import "rtp-normalize";
+
+
 @import "rtp-header";
 @import "rtp-menu";
 @import "rtp-contents";

@@ -26,24 +26,15 @@ and open the template in the editor.
         margin-left: 10px;
     }
 
-    /*    .columns{
-            padding-left: 0em;
-        }*/
-
     .slider{
         padding-left: 0em; 
         padding-right: 0em; 
         img{
             min-width: 100%;
         }
-      
-
-    }
-    .welcome-note-context{
-        @media #{$small-up} { 
-            //padding-left:20px;
-        }
-    }
+    }  
 
 }
+
+$flex-video-padding-bottom: 10.5%;
 
