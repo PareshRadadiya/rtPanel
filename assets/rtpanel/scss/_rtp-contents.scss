@@ -7,23 +7,22 @@ and open the template in the editor.
     Created on : 5 Jul, 2014, 2:38:09 PM
     Author     : paresh
 */
+@mixin custom-thumbnail($width) {
+    @include thumb(
+    $border-width: $width,
+        $box-shadow: 0 0 0 $width rgba(#000,.2)
+        );
+
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
 .welcome-note{
     background-color: $gray;
 
     h4,h6{
         color: $yellow-cream - 50;
-        margin-bottom: 20px;
-    }
-
-    .custom-thumbnail {
-        @include thumb(
-        $border-width: 5px,
-            $box-shadow: 0 0 0 10px rgba(#000,.2)
-            );
-
-        margin-right: 20px;
-        margin-bottom: 1px;
-        margin-left: 10px;
     }
 
     .slider{
@@ -32,9 +31,52 @@ and open the template in the editor.
         img{
             min-width: 100%;
         }
-    }  
+    } 
+
+    .custom-thumbnail{
+        @include custom-thumbnail(7px);
+    }
 
 }
 
-$flex-video-padding-bottom: 10.5%;
 
+
+.vertical-line {
+    border-right: 1px solid $gray - 10;
+}
+
+.content-header{
+    background: linear-gradient(to left,  $yellow-cream + 50 95%, $yellow-cream - 50);
+    //background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee), color-stop(0.75, #eee));
+    height: 30px;
+    padding-top: 1px;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+}
+
+.news{
+    .custom-thumbnail{
+        @include custom-thumbnail(5px);
+    }
+
+    ul
+    {
+        list-style-image:url('assets/images/arrow.gif');
+    }
+}
+
+@mixin get-image($position,$width,$height){
+    background-image: url('assets/images/sprite.jpg');
+    display: block;
+    background-position:$position; 
+    width: $width;
+    height: $height;
+}
+.prev{
+    @include get-image(0px -216px,20px,22px);
+}
+.next{
+    @include get-image(-28px -216px,20px,22px);
+}
