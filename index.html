@@ -20,6 +20,17 @@ and open the template in the editor.
         </script>
     </head>
     <body>
+        <div id="fb-root"></div>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id))
+                    return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "http://connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=208604682683860&version=v2.0";
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));</script>
         <div class="off-canvas-wrap" data-offcanvas>
             <div class="inner-wrap">
                 <div class="hide-for-large-only">
@@ -153,7 +164,7 @@ and open the template in the editor.
                     <div class="row">
                         <div class="column large-8 medium-8 vertical-line">
                             <div class="content-header">
-                                <h5>Glimpses of Exhibition</h5>
+                                Glimpses of Exhibition
                             </div>
 
                             <ul class="clearing-thumbs large-block-grid-4 small-block-grid-4" data-clearing>
@@ -213,7 +224,7 @@ and open the template in the editor.
 
                         <div class="column large-4 medium-4 news">
                             <div class="content-header">
-                                <h5>News</h5>
+                                News
                             </div>
 
                             <a class="th left custom-thumbnail"  href="assets/images/welcomenote-default-user-img.jpg">
@@ -239,15 +250,45 @@ and open the template in the editor.
                         </div>
 
                     </div>
-                    
+
                     <div class="row">
-                        <div class="vertical-line">
-                            
+                        <div class="column large-3 medium-3 vertical-line">
+                            <div class="content-header">
+                                Latest Tweets
+                            </div>
+                            <a class="twitter-timeline" href="https://twitter.com/rtCamp" height="400" data-widget-id="485738735288332288">Tweets by @rtCamp</a>
+                        </div>
+                        <div class="column large-5 medium-5 vertical-line hide-for-small">
+                            <div class="content-header">
+                                Follow us on Facebook
+                            </div>
+                            <div class="fb-like-box" data-href="https://www.facebook.com/rtCamp.solutions" data-height="400" width="420" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+                        </div>
+                        <div class="column large-4 medium-4 weather">
+                            <div class="content-header">
+                                Weather
+                            </div>
+                            <img src="assets/images/weather-forecast-screenshot.jpg"/>
+                            <hr/>
+                             <div class="content-header">
+                                Date and time
+                            </div>
+                            <p>Sunday, 7, July</p>
+                            <h1 class="date-time">12:50:09</h1>
                         </div>
                     </div>
                 </section>
             </div>
         </div>
 
+        <script>!function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0], p = /^http:/.test(d.location) ? 'http' : 'https';
+                if (!d.getElementById(id)) {
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = p + "://platform.twitter.com/widgets.js";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }
+            }(document, "script", "twitter-wjs");</script>
     </body>
 </html>
