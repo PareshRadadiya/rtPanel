@@ -9,16 +9,30 @@ and open the template in the editor.
 */
 
 footer{
-   
-     background-color: $yellow-cream ; 
-     padding-top: 10px;
-     
-     hr{
-         border: 1.5px solid $yellow-cream - 50; 
-         margin-top: 0px;
-     }
-     
-     h6{
-         font-family: $font-face;
-     }
+
+    background-color: $yellow-cream ; 
+    padding-top: 20px;
+
+    hr{
+        border: 1.5px solid $yellow-cream - 50; 
+        margin-top:  0px;
+    }
+
+    .title{
+        font-family: $font-face;
+        @extend h5;
+    }
+
+    .footer-log{
+        margin-bottom: 50px;
+    }
+
+    .last-note{
+        background-color: $yellow-cream - 40; 
+        padding-top: 10px;
+        padding-bottom: 10px;
+        small{
+            color: $white;
+        }
+    }
 }
