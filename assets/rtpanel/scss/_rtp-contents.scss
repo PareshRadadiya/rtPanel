@@ -18,6 +18,14 @@ and open the template in the editor.
     margin-top: 10px;
 }
 
+@mixin get-image($position,$width,$height){
+    background-image: url('assets/images/sprite.jpg');
+    display: block;
+    background-position:$position; 
+    width: $width;
+    height: $height;
+}
+
 .welcome-note{
     background-color: $gray;
 
@@ -46,12 +54,14 @@ and open the template in the editor.
 }
 
 .content-header{
+    @extend .alert-box;
     background: linear-gradient(to left,  $yellow-cream + 50 95%, $yellow-cream - 50);
     //background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee), color-stop(0.75, #eee));
     height: 30px;
-    padding-top: 5px;
+    padding-top: 3px;
     padding-left: 25px;
     margin-bottom: 10px;
+    font-family: $font-face;
     @extend h5;
 }
 
@@ -59,26 +69,15 @@ and open the template in the editor.
     .custom-thumbnail{
         @include custom-thumbnail(5px);
     }
-
-    ul
-    {
-        list-style-image:url('assets/images/arrow.gif');
+    
+    .prev{
+        @include get-image(0px -216px,20px,22px);
+    }
+    .next{
+        @include get-image(-28px -216px,20px,22px);
     }
 }
 
-@mixin get-image($position,$width,$height){
-    background-image: url('assets/images/sprite.jpg');
-    display: block;
-    background-position:$position; 
-    width: $width;
-    height: $height;
-}
-.prev{
-    @include get-image(0px -216px,20px,22px);
-}
-.next{
-    @include get-image(-28px -216px,20px,22px);
-}
 
 .weather{
     h1{
@@ -86,3 +85,18 @@ and open the template in the editor.
         margin-top: -20px; 
     }
 }
+
+.partner{
+    .prev{
+        @include get-image(0px -108px,45px,105px);
+    }
+    .next{
+        @include get-image(-45px -116px,45px,105px);
+    }
+}
+
+
+    ul
+    {
+        list-style-image:url('assets/images/arrow.gif');
+    }
