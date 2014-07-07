@@ -47,8 +47,6 @@ and open the template in the editor.
 
 }
 
-
-
 .vertical-line {
     border-right: 1px solid $gray - 10;
 }
@@ -69,7 +67,7 @@ and open the template in the editor.
     .custom-thumbnail{
         @include custom-thumbnail(5px);
     }
-    
+
     .prev{
         @include get-image(0px -216px,20px,22px);
     }
@@ -96,7 +94,17 @@ and open the template in the editor.
 }
 
 
-    ul
-    {
-        list-style-image:url('assets/images/arrow.gif');
-    }
+ul
+{
+    list-style-image:url('assets/images/arrow.gif');
+}
+
+/* To fill the container and nothing else */
+
+.fb_iframe_widget, .fb_iframe_widget span, .fb_iframe_widget span iframe[style] {
+    width: 100% !important;
+}
+
+.twitter-timeline{
+    width: 100% !important;
+}

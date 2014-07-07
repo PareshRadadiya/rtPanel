@@ -482,7 +482,7 @@
 
 // Flex Video
 
- //$include-html-media-classes: $include-html-classes;
+//$include-html-media-classes: $include-html-classes;
 
 // We use these to control video container padding and margins
 //$flex-video-padding-top: rem-calc(25);
@@ -660,10 +660,10 @@
 
 // $include-html-off-canvas-classes: $include-html-classes;
 
-// $tabbar-bg: #333;
+$tabbar-bg: $yellow-cream;
 // $tabbar-height: rem-calc(45);
 // $tabbar-line-height: $tabbar-height;
-// $tabbar-color: #fff;
+// $tabbar-color: $black;
 // $tabbar-middle-padding: 0 rem-calc(10);
 
 // Off Canvas Divider Styles
@@ -671,18 +671,18 @@
 // $tabbar-left-section-border: solid 1px scale-color($tabbar-bg, $lightness: -50%);
 
 // Off Canvas Tab Bar Headers
-// $tabbar-header-color: #fff;
+$tabbar-header-color: $black;
 // $tabbar-header-weight: bold;
 // $tabbar-header-line-height: $tabbar-height;
 // $tabbar-header-margin: 0;
 
 // Off Canvas Menu Variables
 // $off-canvas-width: rem-calc(250);
-// $off-canvas-bg: #333;
+$off-canvas-bg: $yellow-cream;
 
 // Off Canvas Menu List Variables
 // $off-canvas-label-padding: 0.3rem rem-calc(15);
-// $off-canvas-label-color: #999;
+//$off-canvas-label-color: #999;
 // $off-canvas-label-text-transform: uppercase;
 // $off-canvas-label-font-weight: bold;
 // $off-canvas-label-bg: #444;
@@ -690,11 +690,11 @@
 // $off-canvas-label-border-bottom: none;
 // $off-canvas-label-margin:0;
 // $off-canvas-link-padding: rem-calc(10, 15);
-// $off-canvas-link-color: rgba(#fff, 0.7);
+$off-canvas-link-color: $black;
 // $off-canvas-link-border-bottom: 1px solid scale-color($off-canvas-bg, $lightness: -25%);
 
 // Off Canvas Menu Icon Variables
-// $tabbar-menu-icon-color: #fff;
+$tabbar-menu-icon-color: $black;
 // $tabbar-menu-icon-hover: scale-color($tabbar-menu-icon-color, $lightness: -30%);
 
 // $tabbar-menu-icon-text-indent: rem-calc(35);
@@ -1168,7 +1168,7 @@
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: #333;
+$topbar-bg-color: $yellow-cream;
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
@@ -1189,15 +1189,15 @@
 // $topbar-dropdown-toggle-alpha: 0.4;
 
 // Set the link colors and styles for top-level nav
-// $topbar-link-color: #fff;
-// $topbar-link-color-hover: #fff;
-// $topbar-link-color-active: #fff;
-// $topbar-link-color-active-hover: #fff;
+$topbar-link-color: $black;
+//$topbar-link-color-hover: #fff;
+//$topbar-link-color-active: #fff;
+//$topbar-link-color-active-hover: #fff;
 // $topbar-link-weight: normal;
 // $topbar-link-font-size: rem-calc(13);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 // $topbar-link-bg: $topbar-bg;
-// $topbar-link-bg-hover: #272727;
+$topbar-link-bg-hover: $yellow-cream - 50;
 // $topbar-link-bg-active: $primary-color;
 // $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
 // $topbar-link-font-family: $body-font-family;
